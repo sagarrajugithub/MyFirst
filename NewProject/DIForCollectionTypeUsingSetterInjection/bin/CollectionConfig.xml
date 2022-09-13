@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="cref" class="com.wecodee.DIForCollectionTypeUsingSetterInjection.CollectionType">
+    <property name="al">
+         <list>
+              <value>10</value>
+              <value>20</value>
+              <value>30</value>
+              <value>40</value>
+              <value>50</value>
+         </list>
+    </property>
+    <property name="hs">
+          <set>
+              <value>45.55</value>
+              <value>55.66</value>
+              <value>66.77</value>
+              <value>77.88</value>
+              <value>88.99</value>
+         </set>
+    </property>
+    <property name="hm">
+         <map>
+           <entry key="65" value="A"></entry>
+           <entry key="66" value="B"></entry>
+           <entry key="67" value="C"></entry>
+           <entry key="68" value="D"></entry>
+           <entry key="69" value="E"></entry>
+         </map>
+    </property>
+    
+    </bean>
+    
+
+</beans>
